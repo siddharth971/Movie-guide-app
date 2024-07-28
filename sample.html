@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+
+    <script>console.log("pushti")
+        //   let car = {
+        //     name:"bmw",
+        //     mode:"2001",
+        //     price:"10Lakh",
+
+
+        //     //method and action
+
+        //     speed(){
+        //         return "bmw has top speed gain is 210km"
+        //     }
+
+
+        //   }
+
+        //   console.log(car.speed())
+
+        // let alto  = Object.create(car);
+        // alto.name = "maruti";
+        // alto.model = "2010";
+
+        // console.log(alto)
+
+
+        // class bike {
+        //     constructor(name, brand, model) {
+        //         this.name = name;
+        //         this.brand = brand;
+        //         this.model = model;
+        //     }
+
+        //     getDetail() {
+
+        //         return ` a bike name is ${this.name} and model is ${this.brand} and model is a ${this.model}`
+        //     }
+
+        // };
+
+
+        // let bike1 = new bike("ninja", "kavasaki", "2014");
+        // console.log(bike1.getDetail());
+
+
+        class person {
+            constructor(name,village) {
+                this.name = name;
+                this.village = village;
+            }
+
+            getDetail(){
+                return `name ${name} and village is ${village}`;
+            }
+        }
+
+
+        class student extends person{
+            constructor(id,name,getDetail,village){
+                super(name,village,getDetail);
+                 this.id = id;
+                
+            }
+        }
+
+        let ram  = new student(12,"pushti","tr");
+        console.log(ram.id);
+        console.log(ram.getDetail());
+    </script>
+</body>
+
+</html>
